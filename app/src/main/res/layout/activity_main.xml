@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="horizontal">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/but_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:text="NEW GAME"
+        android:textColor="@color/black"
+        app:backgroundTint="#20B2AA"
+        app:cornerRadius="50dp"/>
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="32sp"
+
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="40dp"
+        android:text="SCORE" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/player_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="3"
+            android:gravity="right"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:hint="Player Score" />
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+
+            android:layout_gravity="fill_horizontal"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/AI_score"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="3"
+            android:gravity="left"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:hint="AI Score" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/text_AI_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:hint="AI Choiсe" />
+
+    <TextView
+        android:id="@+id/text_player_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:hint="Your Choiсe" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but_rock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="ROCK"
+            android:textColor="@color/black"
+            app:backgroundTint="#20B2AA"
+            app:cornerRadius="50dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but_paper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="PAPER"
+            android:textColor="@color/black"
+            app:backgroundTint="#20B2AA"
+            app:cornerRadius="50dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/but_scissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="SCICCORS"
+            android:textColor="@color/black"
+            app:backgroundTint="#20B2AA"
+            app:cornerRadius="50dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text_winner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:hint="Who is winner" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/but_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        app:backgroundTint="#20B2AA"
+        android:layout_margin="10dp"
+        android:text="GAME"
+        app:cornerRadius="50dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
